@@ -1,1 +1,70 @@
-[{"items":[{"id":"m5","name":"Veggie Burger","price":"9.99","description":"A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.","image":"images/veggie-burger.jpg","quantity":1}],"customer":{"name":"NYC","email":"nyc@nyc.com","street":"11th Avenue","postal-code":"0000","city":"NYC"},"id":"404.2401502849493"},{"items":[{"id":"m5","name":"Veggie Burger","price":"9.99","description":"A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.","image":"images/veggie-burger.jpg","quantity":1}],"customer":{"name":"NYC","email":"nyc@nyc.com","street":"11th Avenue","postal-code":"0000","city":"NYC"},"id":"977.9138482208891"},{"items":[{"id":"m5","name":"Veggie Burger","price":"9.99","description":"A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.","image":"images/veggie-burger.jpg","quantity":1}],"customer":{"name":"NYC","email":"nyc@nyc.com","street":"11th Avenue","postal-code":"0000","city":"NYC"},"id":"498.7341028345389"},{"items":[{"id":"m2","name":"Margherita Pizza","price":"12.99","description":"A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.","image":"images/margherita-pizza.jpg","quantity":2}],"customer":{"name":"Colson","email":"colson@google.com","street":"11th St.","postal-code":"101010","city":"NYC"},"id":"162.172278596441"},{"items":[{"id":"m2","name":"Margherita Pizza","price":"12.99","description":"A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.","image":"images/margherita-pizza.jpg","quantity":2}],"customer":{"name":"Colson","email":"colson@google.com","street":"11th St.","postal-code":"101010","city":"NYC"},"id":"639.7784901232086"},{"items":[{"id":"m2","name":"Margherita Pizza","price":"12.99","description":"A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.","image":"images/margherita-pizza.jpg","quantity":1},{"id":"m7","name":"Steak Frites","price":"17.99","description":"Succulent steak cooked to your preference, served with crispy golden fries and herb butter.","image":"images/steak-frites.jpg","quantity":1}],"customer":{"name":"Apple","email":"apple@apple.com","street":"Apple St","postal-code":"00000","city":"Apple City"},"id":"358.00955533770275"},{"items":[{"id":"m2","name":"Margherita Pizza","price":"12.99","description":"A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.","image":"images/margherita-pizza.jpg","quantity":1},{"id":"m7","name":"Steak Frites","price":"17.99","description":"Succulent steak cooked to your preference, served with crispy golden fries and herb butter.","image":"images/steak-frites.jpg","quantity":1},{"id":"m3","name":"Caesar Salad","price":"7.99","description":"Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.","image":"images/caesar-salad.jpg","quantity":1},{"id":"m5","name":"Veggie Burger","price":"9.99","description":"A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.","image":"images/veggie-burger.jpg","quantity":1}],"customer":{"name":"CALIFORNIA","email":"ca@ca.com","street":"CA St","postal-code":"0000","city":"CA"},"id":"959.1648643357646"}]
+[
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 4
+      },
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": "9.99",
+        "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+        "image": "images/veggie-burger.jpg",
+        "quantity": 3
+      },
+      {
+        "id": "m7",
+        "name": "Steak Frites",
+        "price": "17.99",
+        "description": "Succulent steak cooked to your preference, served with crispy golden fries and herb butter.",
+        "image": "images/steak-frites.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "m15",
+        "name": "Chocolate Brownie",
+        "price": "5.99",
+        "description": "A rich and fudgy brownie, topped with a scoop of vanilla ice cream and chocolate sauce.",
+        "image": "images/chocolate-brownie.jpg",
+        "quantity": 4
+      },
+      {
+        "id": "m9",
+        "name": "Chicken Curry",
+        "price": "13.99",
+        "description": "Tender pieces of chicken simmered in a rich and aromatic curry sauce, served with basmati rice.",
+        "image": "images/chicken-curry.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "m6",
+        "name": "Grilled Chicken Sandwich",
+        "price": "10.99",
+        "description": "Tender grilled chicken breast with avocado, bacon, lettuce, and honey mustard on a toasted bun.",
+        "image": "images/grilled-chicken-sandwich.jpg",
+        "quantity": 2
+      },
+      {
+        "id": "m1",
+        "name": "Mac & Cheese",
+        "price": "8.99",
+        "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+        "image": "images/mac-and-cheese.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "Colson",
+      "email": "colson@google.com",
+      "street": "Bay Area St.",
+      "postal-code": "94103",
+      "city": "San Francisco"
+    },
+    "id": "937.3309918917987"
+  }
+]
