@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "items": [
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": "9.99",
+        "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+        "image": "images/veggie-burger.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "NYC",
+      "email": "nyc@nyc.com",
+      "street": "11th Avenue",
+      "postal-code": "0000",
+      "city": "NYC"
+    },
+    "id": "404.2401502849493"
+  },
+  {
+    "items": [
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": "9.99",
+        "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+        "image": "images/veggie-burger.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "NYC",
+      "email": "nyc@nyc.com",
+      "street": "11th Avenue",
+      "postal-code": "0000",
+      "city": "NYC"
+    },
+    "id": "977.9138482208891"
+  },
+  {
+    "items": [
+      {
+        "id": "m5",
+        "name": "Veggie Burger",
+        "price": "9.99",
+        "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+        "image": "images/veggie-burger.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "NYC",
+      "email": "nyc@nyc.com",
+      "street": "11th Avenue",
+      "postal-code": "0000",
+      "city": "NYC"
+    },
+    "id": "498.7341028345389"
+  }
+]

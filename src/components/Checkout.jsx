@@ -26,11 +26,27 @@ export default function Checkout() {
     // convert form data object to simpler javascript object where form
     // inputs are represented by their names as their property names and
     // their entered value are the values for those properties by using
-    // Object.fromEnteries and passing form data entries to it
+    // Object.fromEntries and passing form data entries to it
     // this gives: { email: abc@xyz.com } like that for all other inputs too
-    const customerData = Object.fromEnteries(fd.entries());
+    // hence we get all the form input fields in key value pair
+    const customerData = Object.fromEntries(fd.entries());
 
-    // send that data to the backend
+    // send that data customerData along with the cart data to the backend
+    // Since this is the request that changes something on the backend,
+    // we dont necessarily have to await for the response here
+    // It will just hit the backend and there this data can be extracted and stored
+    fetch('http://localhost:3000/orders', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        order: {
+          items: cartCtx.items,
+          customer: customerData,
+        },
+      }),
+    });
   }
 
   return (
@@ -39,7 +55,7 @@ export default function Checkout() {
         <h2>Checkout</h2>
         <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
 
-        <Input label='Full Name' type='text' id='full-name' />
+        <Input label='Full Name' type='text' id='name' />
         <Input label='Email Address' type='email' id='email' />
         <Input lable='Street' type='text' id='street' />
         <div className='control-row'>
