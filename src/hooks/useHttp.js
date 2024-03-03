@@ -36,10 +36,17 @@ export default function useHttp(url, config, initialData) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
 
+  function clearData() {
+    setData(initialData);
+  }
+
   // this function is about updating some state based on the requests status
   // sendRequest can be a async func, this is possible in custom hooks
   const sendRequest = useCallback(
-    async function sendRequest() {
+    // with this adjustment using data as param made here, sendRequest can now
+    // be used such that the data is only passed at the point in time
+    // where we're ready to send the request
+    async function sendRequest(data) {
       // set loading to true because we're about to send a request
       setIsLoading(true);
       // we should also wrap in try catch because this might fail here
@@ -51,7 +58,7 @@ export default function useHttp(url, config, initialData) {
       // states in the UI
       // because the idea of this custom hook in the end will be to use it in a component.
       try {
-        const resData = await sendHttpRequest(url, config);
+        const resData = await sendHttpRequest(url, { ...config, body: data });
         setData(resData);
       } catch (error) {
         setError(error.message || 'Something went wrong!');
@@ -79,10 +86,12 @@ export default function useHttp(url, config, initialData) {
   // we expose the data, isLoading and error state to whichever component
   // is using this custom hook
   // also sendRequest function and execute whenever we want ex when a form is submitted
+  // + clearData function too
   return {
     data,
     isLoading,
     error,
     sendRequest,
+    clearData,
   };
 }
