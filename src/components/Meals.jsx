@@ -1,5 +1,6 @@
 import MealItem from './MealItem';
 import useHttp from '../hooks/useHttp';
+import Error from './Error';
 
 // creating this object once when this file is parsed for the first time
 // then after in the component function, we're always using the same object
@@ -16,7 +17,11 @@ export default function Meals() {
   console.log('loadedMeals', loadedMeals);
 
   if (isLoading) {
-    return <p>Fetching meals...</p>;
+    return <p className='center'>Fetching meals...</p>;
+  }
+
+  if (error) {
+    return <Error title='Failed to fetch meals' message={error} />;
   }
 
   // alternative to initialData approach
